@@ -1,0 +1,9 @@
+{
+    "scripts": {
+      "build": "tailwindcss -i ../src/input.css -o ../src/output.css",
+      "start": "tailwindcss -i ../src/input.css -o ../src/output.css --watch"
+    },
+    "dependencies": {
+      "tailwindcss": "^3.3.3"
+    }
+  }
