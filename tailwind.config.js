@@ -1,8 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["*.html"],
-    theme: {
-      extend: {},
+  content: ["*.html"],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#8ACC50",
+        secondary: "#F1F4F6",
+        textColorblack: "#000000",
+        textColorwhite: "#FFFFFF",
+        backgroundColor: "#001342",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        para: ["Montserrat"],
+        title: ["Raleway"],
+      },
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
+};

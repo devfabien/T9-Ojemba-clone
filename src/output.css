@@ -534,29 +534,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-<<<<<<< HEAD
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+.font-para {
+  font-family: Montserrat;
 }
 
-=======
->>>>>>> 32c6acd (chore(setting-project):)
-.text-center {
-  text-align: center;
+.font-title {
+  font-family: Raleway;
 }
 
-<<<<<<< HEAD
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-slate-400 {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-=======
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
->>>>>>> 32c6acd (chore(setting-project):)
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
