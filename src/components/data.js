@@ -29,3 +29,6 @@
     console.log("jdfdhjf",accordion);
 acc1.innerHTML=`${accordion.filter((v,i)=>i<2).map((data)=>(` <div class="flex justify-between font-bold font-para px-2 py-3 border-b-2 border-primary w-full"><h2>${data.title}</h2> <h2>+</h2></div>`)).join('')}`
 
+let acc2=document.getElementById('accordion2');
+console.log("jdfdhjf",accordion);
+acc2.innerHTML=`${accordion.filter((v,i)=>i>1).map((data)=>(` <div class="flex justify-between font-bold font-para px-2 py-3 border-b-2 border-primary w-full my-3 "><h2>${data.title}</h2> <h2>+</h2></div>`)).join('')}`
