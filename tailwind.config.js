@@ -15,11 +15,6 @@ module.exports = {
         para: ["Montserrat"],
         title: ["Raleway"],
       },
-      // keyframes{
-      //   anime{
-      //     animate-fade-up animate-once animate-duration-1000 animate-delay-100 animate-ease-in-out animate-normal animate-fill-both
-      //   }
-      // }
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
