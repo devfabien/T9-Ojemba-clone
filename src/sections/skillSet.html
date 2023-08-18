@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body><div class="bg-gradient-to-r from-backgroundColor from-40% to-primary py-20 px-16 mx-auto max-w-7xl" style="-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);">
+    <h2 class="text-white font-title py-5"><span class="font-title underline decoration-primary decoration-solid decoration-2">Skillset</span> unserer Entwickler:innen</h2>
+<div class="py-1 flex gap-3 font-medium font-title text-sm " id="skills"></div>
+<div class="py-1 flex gap-3 font-medium font-title text-sm " id="skills2"></div>
+<h2 class="text-primary font-roboto text-xs py-5 font-bold">ZUM TECH-SKIlLPROFIL </h2>
+<h2 class="text-white font-title py-7">Eine mögliche<span class="font-title underline decoration-primary decoration-solid decoration-2 py-7">Teamkonstellation</span></h2>
+<div class=" flex flex-col justify-center items-center py-1 relative ">
+    <img src="../assets/teamAnol.webp" alt="" srcset="" class="max-w-2xl ">
+    <div class="max-w-3xl w-full absolute bottom-0 ">
+        <div class="bg-blue-950/90 px-4 grid grid-flow-col border border-black" id="team"></div>
+    </div>
+</div>
+</div>
+<script>
+    const team=document.getElementById('team');
+    let teams=[
+        {name:'Arnold:',
+    description:`“d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam“`},
+    {name:'Clever:',
+    description:`“d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam“`},
+    {name:'Izzedin:',
+    description:`“d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam“`},
+    ]
+    team.innerHTML=`${teams.map(elem=>(`<div class="py-1 flex text-textColorwhite gap-3 font-para text-sm"> <h2 class="font-semibold py-2"> ${elem.name}
+        <p class="italic font-extralight py-2 text-xs">${elem.description}</p>
+        </h2>`)).join('')}`
+    let myDiv=document.getElementById('skills');
+    let datas=['Typescript','Javascript','React','Rest APIs','Redux','test driven developement','Data modeling'];
+    myDiv.innerHTML=`${datas.map(skill=>(`<div class="rounded-2xl py-1 px-2 bg-white whitespace-nowrap">${skill} </div>`)).join('')}`
+
+    let myDiv2=document.getElementById('skills2');
+    let datas2=['JWT','CSS','frontend architecture','Figma','Nest.JS','ORM','Prisma','GraphQL','CI / CD','Scrum Framework'];
+    myDiv2.innerHTML=`${datas2.map(skill=>(`<div class="rounded-2xl py-1 px-2 bg-white whitespace-nowrap">${skill} </div>`)).join('')}`
+</script>
+</body>
+</html>
