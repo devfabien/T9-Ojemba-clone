@@ -5,10 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>team project</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" type="text/css" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="./src/components/data.js"></script>
+    <script>
+        const loadComponents = (id, url) => {
+            fetch(url)
+                .then((response) => response.text())
+                .then((html) => {
+                    document.getElementById(id).innerHTML = html;
+                });
+        }
+
+        window.onload = () => {
+            loadComponents('hero', 'src/sections/hero.html');
+            loadComponents('heroFooter', 'src/sections/heroFooter.html');
+            loadComponents('team', 'src/sections/managedTeam.html');
+            loadComponents('footer', 'src/sections/footer.html');
+        }
+
+    </script>
 </head>
 
-<body>
+
+<body class=" overflow-auto scrollbar-hide flex justify-center max-w-7xl">
+    <div class="bg-backgroundColor">
+        <div class="relative">
+            <div id="heroFooter"></div>
+            <div id="hero"></div>
+
+        </div>
+        <div id="team"></div>
+        <div id="footer"></div>
+    </div>
+    <script src="./src/components/data.js"></script>
 
 </body>
+
+
 </html>
