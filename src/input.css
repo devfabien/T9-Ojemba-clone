@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../src/assets/Fonts/ralestatic/Raleway-Medium.ttf');
+
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../src/assets/Fonts/monstatic/Montserrat-Medium.ttf');
+}
