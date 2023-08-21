@@ -1,0 +1,39 @@
+<body>
+
+    <!-- Hero Section Footer -->
+    <div class="bg-backgroundColor w-full h-36 absolute z-10 bottom-0">
+
+        <div class=" w-full h-full bg-gradient-to-l from-primary via-backgroundColor  opacity-70 flex justify-center gap-12 pt-10"
+            id="heroCard">agnes</div>
+
+    </div>
+    <script>
+        const myheroCard = document.z('heroCard');
+        const content = [
+            {
+                tiltle: 'Talent & Quality',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt',
+                image: '../assets/hand-coins (1) 1.svg'
+            },
+            {
+                tiltle: 'Talent & Quality',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt',
+                image: '../assets/handshake 1.svg'
+            },
+            {
+                tiltle: 'Talent & Quality',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt',
+                image: '../assets/map-pin-line 1.svg'
+            }
+        ]
+        myheroCard.innerHTML = `${content.map(el => (
+            ` <div class="flex gap-4">
+                <img class="w-14 h-14" src="${el.image}" alt="">
+                <div class="w-72">
+                    <h5 class="font-title text-primary">${el.tiltle}</h5>
+                    <p class="font-para text-textColorwhite">${el.description}</p>
+                </div>
+            </div>`
+        ))}`
+    </script>
+</body>
