@@ -13,7 +13,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         para: ["Montserrat"],
-        title: ["Raleway"],
+        title: ['Raleway','sans-serif']
       },
     },
   },
