@@ -25,7 +25,7 @@ const managedTeam = () => {
       description: "not ready",
     },
   ];
-  let acc4=document.getElementById('accordion4');
+  let acc4 = document.getElementById("accordion4");
   acc4.innerHTML = `${accordion
     .map(
       (data4) =>
@@ -73,8 +73,8 @@ const skillSet = () => {
     .map(
       (
         elem
-      ) => `<div class=" flex text-textColorwhite md:gap-3 gap-1 font-para text-sm"> <h2 class="font-semibold md:py-2"> ${elem.name}
-        <p class="italic font-extralight py-2 text-xs">${elem.description}</p>
+      ) => `<div class=" flex text-textColorwhite md:gap-3 gap-1 font-para text-sm"> <h2 class="font-bold md:py-2"> ${elem.name}
+        <p class="italic font-extralight py-4 text-lg">${elem.description}</p>
         </h2>`
     )
     .join("")}`;
@@ -91,7 +91,7 @@ const skillSet = () => {
   myDiv.innerHTML = `${datas
     .map(
       (skill) =>
-        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor">${skill} </div>`
+        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor font-title text-sm">${skill} </div>`
     )
     .join("")}`;
 
@@ -111,7 +111,7 @@ const skillSet = () => {
   myDiv2.innerHTML = `${datas2
     .map(
       (skill) =>
-        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor">${skill} </div>`
+        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor font-title text-sm">${skill} </div>`
     )
     .join("")}`;
 };
