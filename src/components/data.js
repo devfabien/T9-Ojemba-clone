@@ -99,8 +99,12 @@ const skillSet = () => {
     .map(
       (
         elem
-      ) => `<div class=" flex text-textColorwhite md:gap-3 gap-1 font-para text-sm"> <h2 class="font-semibold md:py-2"> ${elem.name}
-        <p class="italic font-extralight py-2 text-xs">${elem.description}</p>
+      ) => `<div class=" flex text-textColorwhite md:gap-3 gap-1 font-para text-sm"> <h2 class="font-bold md:py-2"> ${elem.name}
+<<<<<<< HEAD
+        <p class="italic font-extralight py-4 text-base">${elem.description}</p>
+=======
+        <p class="italic font-extralight py-4 text-lg">${elem.description}</p>
+>>>>>>> 2be276ddb60af1c2831e752bcf00b936b69a80f8
         </h2>`
     )
     .join("")}`;
@@ -117,7 +121,7 @@ const skillSet = () => {
   myDiv.innerHTML = `${datas
     .map(
       (skill) =>
-        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor">${skill} </div>`
+        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor font-semibold font-title text-sm">${skill} </div>`
     )
     .join("")}`;
 
@@ -137,7 +141,7 @@ const skillSet = () => {
   myDiv2.innerHTML = `${datas2
     .map(
       (skill) =>
-        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor">${skill} </div>`
+        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor font-semibold font-title text-sm">${skill} </div>`
     )
     .join("")}`;
 };
