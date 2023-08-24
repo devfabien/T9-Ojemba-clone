@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        darkPrimary: "#116355",
+        yellow0: "#F4BA00",
         primary: "#8ACC50",
         secondary: "#F1F4F6",
         textColorblack: "#000000",
@@ -13,7 +15,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         para: ["Montserrat"],
-        title: ['Raleway','sans-serif']
+        title: ["Raleway", "sans-serif"],
       },
     },
   },
