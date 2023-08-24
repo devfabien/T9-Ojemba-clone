@@ -100,11 +100,7 @@ const skillSet = () => {
       (
         elem
       ) => `<div class=" flex text-textColorwhite md:gap-3 gap-1 font-para text-sm"> <h2 class="font-bold md:py-2"> ${elem.name}
-<<<<<<< HEAD
         <p class="italic font-extralight py-4 text-base">${elem.description}</p>
-=======
-        <p class="italic font-extralight py-4 text-lg">${elem.description}</p>
->>>>>>> 2be276ddb60af1c2831e752bcf00b936b69a80f8
         </h2>`
     )
     .join("")}`;
