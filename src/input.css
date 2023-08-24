@@ -4,12 +4,12 @@
 
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/Montserrat/Montserrat-Medium.ttf');
+    font-family: Montserrat;
+    src: url('./assets/fonts/monstatic/Montserrat-Medium.ttf');
 }
 
 @font-face {
-    font-family: 'Raleway';
+    font-family: Raleway;
     src: url('./assets/fonts/Raleway/static/Raleway-Medium.ttf');
 }
 
