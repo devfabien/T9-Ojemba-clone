@@ -25,11 +25,37 @@ const managedTeam = () => {
       description: "not ready",
     },
   ];
-  let acc4=document.getElementById('accordion4');
-  acc4.innerHTML = `${accordion
+  const accordionone = [
+    {
+      title: "Welche Frage steht hier?",
+      description: "+",
+    },
+    {
+      title: "Welche Frage steht hier?",
+      description: "+",
+    },
+    {
+      title: "Welche Frage steht hier? ",
+      description: "+",
+    },
+    {
+      title: "Welche Frage steht hier?",
+      description: "+",
+    },
+    {
+      title: "Welche Frage steht hier? ",
+      description: "+",
+    },
+    {
+      title: "Welche Frage steht hier? ",
+      description: "+",
+    },
+  ];
+  let acc4 = document.getElementById("accordion4");
+  acc4.innerHTML = `${accordionone
     .map(
-      (data4) =>
-        ` <div class="flex justify-between font-bold font-para px-2 py-4 border-b-2 border-primary w-full"><h2>${data4.title}</h2> <h2>+</h2></div>`
+      (data) =>
+        ` <div class=" flex justify-between font-bold font-para px-2 pt-12 items-bottom border-b-2 border-primary w-full"><h2>${data.title}</h2> <h2>${data.description}</h2></div>`
     )
     .join("")}`;
   let acc1 = document.getElementById("accordion1");
