@@ -59,7 +59,6 @@ const managedTeam = () => {
     )
     .join("")}`;
   let acc1 = document.getElementById("accordion1");
-  console.log("jdfdhjf", accordion);
   acc1.innerHTML = `${accordion
     .filter((v, i) => i < 2)
     .map(
@@ -69,7 +68,6 @@ const managedTeam = () => {
     .join("")}`;
 
   let acc2 = document.getElementById("accordion2");
-  console.log("jdfdhjf", accordion);
   acc2.innerHTML = `${accordion
     .filter((v, i) => i > 1)
     .map(
