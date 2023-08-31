@@ -20,8 +20,8 @@ List all the tasks and sub-tasks that were assigned to you Make sure you check e
 
 Please describe the tests that you ran to verify your functionalities. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration.
 
-1. run `yarn i` to install all required dependencies
-2. run `yarn run dev`
+1. run `npm i` to install all required dependencies
+2. run `npm start`
 3. step 3
 4. step 4...
 
