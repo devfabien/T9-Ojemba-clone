@@ -1,65 +1,30 @@
-const managedTeam = () => {
-  const accordion = [
-    {
-      title: "Remote",
-      description: "not ready",
-    },
-    {
-      title: "Englischsprachig",
-      description: "not ready",
-    },
-    {
-      title: "Hohe Qualität ",
-      description: "not ready",
-    },
-    {
-      title: "100% Verantwortung",
-      description: "not ready",
-    },
-    {
-      title: "Riesiger Talentepool ",
-      description: "not ready",
-    },
-    {
-      title: "Risikoarm ",
-      description: "not ready",
-    },
-  ];
-  const accordionone = [
-    {
-      title: "Welche Frage steht hier?",
-      description: "+",
-    },
-    {
-      title: "Welche Frage steht hier?",
-      description: "+",
-    },
-    {
-      title: "Welche Frage steht hier? ",
-      description: "+",
-    },
-    {
-      title: "Welche Frage steht hier?",
-      description: "+",
-    },
-    {
-      title: "Welche Frage steht hier? ",
-      description: "+",
-    },
-    {
-      title: "Welche Frage steht hier? ",
-      description: "+",
-    },
-  ];
-  let acc4 = document.getElementById("accordion4");
-  acc4.innerHTML = `${accordionone
+//Fetching data from json file
+
+const data = new Promise((resolve, reject) => {
+  fetch("./src/components/managedData.json")
+    .then((respond) => {
+      resolve(respond.json());
+    })
+    .catch((err) => {
+      reject(err);
+    });
+});
+
+//Managed Team
+
+const managedTeam = async () => {
+  const fetchedData = await data;
+  let managedTeamAccordion = document.getElementById("accordion4");
+  managedTeamAccordion.innerHTML = `${fetchedData.data
+    .filter((el) => el.description == "+")
     .map(
       (data) =>
         ` <div class=" flex justify-between font-bold font-Montserrat px-2 pt-12 items-bottom border-b-2 border-greenn w-full"><h2>${data.title}</h2> <h2>${data.description}</h2></div>`
     )
     .join("")}`;
-  let acc1 = document.getElementById("accordion1");
-  acc1.innerHTML = `${accordion
+  let secondMmanagedTeamAccordion = document.getElementById("accordion1");
+
+  secondMmanagedTeamAccordion.innerHTML = `${fetchedData.data
     .filter((v, i) => i < 2)
     .map(
       (data) =>
@@ -67,9 +32,11 @@ const managedTeam = () => {
     )
     .join("")}`;
 
-  let acc2 = document.getElementById("accordion2");
-  acc2.innerHTML = `${accordion
-    .filter((v, i) => i > 1)
+  let teamAccordion = document.getElementById("accordion2");
+
+  teamAccordion.innerHTML = `${fetchedData.data
+
+    .filter((v, i) => i > 1 && v.description == "not ready")
     .map(
       (data) =>
         ` <div class="flex justify-between font-bold font-Montserrat px-2 py-3 border-b-2 border-greenn w-full my-3 "><h2>${data.title}</h2> <h2>+</h2></div>`
@@ -77,23 +44,17 @@ const managedTeam = () => {
     .join("")}`;
 };
 
-const skillSet = () => {
-  const team = document.getElementById("unsteam");
-  let teams = [
-    {
-      name: "Arnold:",
-      description: `“d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam“`,
-    },
-    {
-      name: "Clever:",
-      description: `“d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam“`,
-    },
-    {
-      name: "Izzedin:",
-      description: `“d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam“`,
-    },
-  ];
-  team.innerHTML = `${teams
+// skill set page
+
+const skillSet = async () => {
+  const fetchedData = await data;
+  const skillsTeam = document.getElementById("unsteam");
+  skillsTeam.innerHTML = `${fetchedData.data
+    .filter(
+      (el) =>
+        el.description ==
+        "d diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam"
+    )
     .map(
       (
         elem
@@ -102,40 +63,25 @@ const skillSet = () => {
         </h2>`
     )
     .join("")}`;
-  let myDiv = document.getElementById("skills");
-  let datas = [
-    "Typescript",
-    "Javascript",
-    "React",
-    "Rest APIs",
-    "Redux",
-    "test driven developement",
-    "Data modeling",
-  ];
-  myDiv.innerHTML = `${datas
-    .map(
-      (skill) =>
-        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-blue_990 font-semibold font-Raleway text-sm">${skill} </div>`
+  let skillContainer = document.getElementById("skills");
+
+  skillContainer.innerHTML = `${fetchedData.data
+    .filter((el) => el.skillsetone)[0]
+    .skillsetone.map((skill, i) =>
+      i < 7
+        ? `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor font-semibold font-title text-sm">${skill} </div>`
+        : []
     )
     .join("")}`;
 
-  let myDiv2 = document.getElementById("skills2");
-  let datas2 = [
-    "JWT",
-    "CSS",
-    "frontend architecture",
-    "Figma",
-    "Nest.JS",
-    "ORM",
-    "Prisma",
-    "GraphQL",
-    "CI / CD",
-    "Scrum Framework",
-  ];
-  myDiv2.innerHTML = `${datas2
-    .map(
-      (skill) =>
-        `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-blue_990 font-semibold font-Raleway text-sm">${skill} </div>`
+  let secondSkillContainer = document.getElementById("skills2");
+
+  secondSkillContainer.innerHTML = `${fetchedData.data
+    .filter((el) => el.skillsetone)[0]
+    .skillsetone.map((skill, i) =>
+      i > 6
+        ? `<div class="rounded-2xl py-1 px-2 h-fit bg-white whitespace-nowrap text-backgroundColor font-semibold font-title text-sm">${skill} </div>`
+        : []
     )
     .join("")}`;
 };
