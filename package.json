@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "start": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "node api.js && tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "start": "node api.js && tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "tailwindcss": "^3.3.3"

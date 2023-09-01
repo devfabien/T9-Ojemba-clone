@@ -1,0 +1,33 @@
+{
+  "default_branch": "dev",
+  "branches": [
+    "ch-readme",
+    "dev",
+    "fix-and-restructure-javascript-files",
+    "fix/coach-QA",
+    "fx-quality-assurance",
+    "fx/images_tailwindconfig",
+    "fx/underlines",
+    "origin"
+  ],
+  "parent": {
+    "ch-readme": "dev",
+    "dev": null,
+    "fix-and-restructure-javascript-files": "dev",
+    "fix/coach-QA": "dev",
+    "fx-quality-assurance": "dev",
+    "fx/images_tailwindconfig": "dev",
+    "fx/underlines": "dev",
+    "origin": "dev"
+  },
+  "order": [
+    "dev",
+    "ch-readme",
+    "fix-and-restructure-javascript-files",
+    "fix/coach-QA",
+    "fx-quality-assurance",
+    "fx/images_tailwindconfig",
+    "fx/underlines",
+    "origin"
+  ]
+}
