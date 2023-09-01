@@ -1,0 +1,25 @@
+.managed_skew{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+.footer_skew{
+    -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%); clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+}
+.footer_gradient{
+    background: rgb(138,204,80);
+    background: linear-gradient(140deg, rgba(138,204,80,1) -70%, rgba(0,19,66,1) 29%, rgba(0,19,66,1) 64%, rgba(138,204,80,1) 110%);
+}
+.founder_skew{
+    -webkit-clip-path: polygon(53% 7%, 72% 31%, 100% 34%, 100% 100%, 0 84%, 0 34%, 34% 29%); clip-path: polygon(53% 7%, 72% 31%, 100% 34%, 100% 100%, 0 84%, 0 34%, 34% 29%);
+}
+.map_skew{
+    -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+}
+.maiborn_skew{
+    -webkit-clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 89%);
+        clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 89%);
+}
+.team_skew{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
