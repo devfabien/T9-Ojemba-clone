@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./assets/fonts/monstatic/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('./assets/fonts/Raleway/static/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('./assets/fonts/Roboto/Roboto-Medium.ttf');
+}
