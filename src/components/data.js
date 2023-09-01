@@ -19,7 +19,7 @@ const managedTeam = async () => {
     .filter((el) => el.description == "+")
     .map(
       (data) =>
-        ` <div class=" flex justify-between font-bold font-para px-2 pt-12 items-bottom border-b-2 border-primary w-full"><h2>${data.title}</h2> <h2>${data.description}</h2></div>`
+        ` <div class=" flex justify-between font-bold font-Montserrat px-2 pt-12 items-bottom border-b-2 border-greenn w-full"><h2>${data.title}</h2> <h2>${data.description}</h2></div>`
     )
     .join("")}`;
   let secondMmanagedTeamAccordion = document.getElementById("accordion1");
@@ -28,7 +28,7 @@ const managedTeam = async () => {
     .filter((v, i) => i < 2)
     .map(
       (data) =>
-        ` <div class="flex justify-between font-bold font-para px-2 py-3 border-b-2 border-primary w-full"><h2>${data.title}</h2> <h2>+</h2></div>`
+        ` <div class="flex justify-between font-bold font-Montserrat px-2 py-3 border-b-2 border-greenn w-full"><h2>${data.title}</h2> <h2>+</h2></div>`
     )
     .join("")}`;
 
@@ -39,7 +39,7 @@ const managedTeam = async () => {
     .filter((v, i) => i > 1 && v.description == "not ready")
     .map(
       (data) =>
-        ` <div class="flex justify-between font-bold font-para px-2 py-3 border-b-2 border-primary w-full my-3 "><h2>${data.title}</h2> <h2>+</h2></div>`
+        ` <div class="flex justify-between font-bold font-Montserrat px-2 py-3 border-b-2 border-greenn w-full my-3 "><h2>${data.title}</h2> <h2>+</h2></div>`
     )
     .join("")}`;
 };
@@ -58,7 +58,7 @@ const skillSet = async () => {
     .map(
       (
         elem
-      ) => `<div class=" flex text-textColorwhite md:gap-3 gap-1 font-para text-sm"> <h2 class="font-bold md:py-2"> ${elem.name}
+      ) => `<div class=" flex text-white md:gap-3 gap-1 font-Montserrat text-sm"> <h2 class="font-bold md:py-2"> ${elem.name}
         <p class="italic font-extralight py-4 text-base">${elem.description}</p>
         </h2>`
     )
