@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>team project</title>
     <link rel="stylesheet" type="text/css" href="./dist/output.css">
     <link rel="stylesheet" href="./src/components/skews.css">
     <script src="./src/components/data.js"></script>
     <script defer="defer">
-        const loadComponents = (id, url) => {
-            return fetch(url)
-                .then((response) => response.text())
-                .then((html) => {
-                    document.getElementById(id).innerHTML = html;
-                });
-        }
+      const loadComponents = (id, url) => {
+        return fetch(url)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+          });
+      };
 
-        window.onload = () => {
-            Promise.all([loadComponents('hero', 'src/sections/hero.html'),
-            loadComponents('heroFooter', 'src/sections/heroFooter.html'),
-            loadComponents('team', 'src/sections/managedTeam.html'),
-            loadComponents('skill', 'src/sections/skillSet.html'),
-            loadComponents('unsere', 'src/sections/unsereTeam.html'),
-            loadComponents('MaibornWolff', 'src/sections/MaibornWolff.html'),
-            loadComponents('footer', 'src/sections/footer.html'),
-            loadComponents('founder', 'src/sections/founder.html'),
-            loadComponents('training', 'src/sections/trainingProgram.html')]).then(() => { managedTeam(), skillSet() })
-
-        }
-
+      window.onload = () => {
+        Promise.all([
+          loadComponents("hero", "src/sections/hero.html"),
+          loadComponents("heroFooter", "src/sections/heroFooter.html"),
+          loadComponents("team", "src/sections/managedTeam.html"),
+          loadComponents("skill", "src/sections/skillSet.html"),
+          loadComponents("unsere", "src/sections/unsereTeam.html"),
+          loadComponents("MaibornWolff", "src/sections/MaibornWolff.html"),
+          loadComponents("footer", "src/sections/footer.html"),
+          loadComponents("founder", "src/sections/founder.html"),
+          loadComponents("training", "src/sections/trainingProgram.html"),
+        ]).then(() => {
+          managedTeam(), skillSet();
+        });
+      };
     </script>
-</head>
+  </head>
 
 
 <body class="mx-auto" style="max-width: 1624px;">
@@ -53,8 +54,5 @@
         <div id="founder"></div>
         <div id="footer"></div>
     </div>
-
-</body>
-
-
+  </body>
 </html>
